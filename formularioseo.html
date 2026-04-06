@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<title>Cadastro Chocoholic</title>
+</head>
+
+<body>
+
+<header>
+    <h1>🍫 Chocoholic</h1>
+</header>
+
+<nav>
+    <a href="index.html">Início</a> |
+    <a href="pagina2.html">Produtos</a> |
+    <a href="contato.html">Contato</a> |
+    <a href="formulario.html">Cadastro</a>
+</nav>
+
+<main>
+
+<section>
+    <h2>Cadastro de Cliente</h2>
+
+    <form>
+
+        <!-- NOME -->
+        <label>Nome:</label><br>
+        <input type="text" name="nome" required minlength="3"
+        oninvalid="this.setCustomValidity('Digite seu nome')"
+        oninput="this.setCustomValidity('')">
+        <br><br>
+
+        <!-- EMAIL -->
+        <label>Email:</label><br>
+        <input type="email" name="email" required
+        oninvalid="this.setCustomValidity('Digite um email válido')"
+        oninput="this.setCustomValidity('')">
+        <br><br>
+
+        <!-- IDADE -->
+        <label>Idade:</label><br>
+        <input type="number" name="idade" min="18" max="100" required
+        oninvalid="this.setCustomValidity('Idade deve ser entre 18 e 100')"
+        oninput="this.setCustomValidity('')">
+        <br><br>
+
+        <!-- SENHA -->
+        <label>Senha:</label><br>
+        <input type="password" name="senha" minlength="8" required
+        oninvalid="this.setCustomValidity('Senha deve ter no mínimo 8 caracteres')"
+        oninput="this.setCustomValidity('')">
+        <br><br>
+
+        <!-- CEP -->
+        <label>CEP:</label><br>
+        <input type="text" name="cep" pattern="[0-9]{5}-[0-9]{3}" required
+        placeholder="00000-000"
+        oninvalid="this.setCustomValidity('Digite um CEP no formato 00000-000')"
+        oninput="this.setCustomValidity('')">
+        <br><br>
+
+        <!-- TELEFONE -->
+        <label>Telefone:</label><br>
+        <input type="tel" name="telefone" placeholder="(27) 99999-9999">
+        <br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Chocoholic</p>
+</footer>
+
+</body>
+</html>
